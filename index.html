@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regalo Especial</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gift-box {
+            background-color: #ffeb3b;
+            padding: 20px;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .gift-box:hover {
+            background-color: #fbc02d;
+        }
+
+        .message {
+            display: none;
+            margin-top: 20px;
+            background-color: #fff3e0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .roses {
+            background: url('https://www.transparenttextures.com/patterns/hexagons-light.png'), url('https://image.shutterstock.com/image-vector/hand-drawn-roses-frame-vector-illustration-260nw-1861265766.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .poem {
+            font-style: italic;
+            color: #7b7b7b;
+            margin-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="gift-box" onclick="showMessage()">
+        Ha llegado un regalo especial para ti. Toca para abrir.
+    </div>
+
+    <div class="message roses" id="message">
+        <h2>Querida amiga,</h2>
+        <p>Te quiero mucho, gracias por ser la mejor amiga que he tenido todos estos días.</p>
+        <p class="poem">
+            "Como las rosas que florecen en primavera,<br>
+            tu amistad ilumina mi vida con su luz sincera.<br>
+            En cada risa, en cada charla sin fin,<br>
+            encuentro en ti lo mejor de mi existir."
+        </p>
+        <p>Siempre estaré aquí para ti, con todo mi cariño.</p>
+    </div>
+</div>
+
+<script>
+    function showMessage() {
+        document.getElementById('message').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
